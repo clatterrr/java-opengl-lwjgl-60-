@@ -1,0 +1,16 @@
+#version 150
+
+
+/*输入：从VertexShader中获得的每个顶点颜色信息
+* 根据每个顶点的颜色信息，输出每个像素的颜色信息
+*/
+in vec3 colour;
+
+
+out vec4 out_Color;
+
+void main(void){
+
+	out_Color = vec4(colour,1.0);
+
+}
